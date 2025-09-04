@@ -10,20 +10,17 @@
         <div class="product-card">
             <img src="assets/monsteraD.webp" alt="Monstera Deliciosa">
             <h3>Monstera Deliciosa</h3>
-            <p class="price">$25.00</p>
-            <a routerLink="/product/monstera" class="btn">View Product</a>
+            <a [routerLink]="['/productDetails', 1]" class="btn">View Product</a>
         </div>
         <div class="product-card">
             <img src="assets/fiddle.webp" alt="Fiddle Leaf Fig">
             <h3>Fiddle Leaf Fig</h3>
-            <p class="price">$50.00</p>
-            <a routerLink="/product/fiddle-leaf" class="btn">View Product</a>
+            <a [routerLink]="['/productDetails', 2]" class="btn">View Product</a>
         </div>
         <div class="product-card">
             <img src="assets/aloeVera.webp" alt="Aloe Vera">
             <h3>Aloe Vera</h3>
-            <p class="price">$15.00</p>
-            <a routerLink="/product/aloe-vera" class="btn">View Product</a>
+            <a [routerLink]="['/productDetails', 10]" class="btn">View Product</a>
         </div>
     </div>
     
