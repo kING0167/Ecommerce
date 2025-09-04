@@ -1,0 +1,54 @@
+/* Navbar Styling */
+#navbar {
+    background: linear-gradient(135deg, #013220 , #388E3C); /* Soft gradient green background */
+    padding: 12px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Navbar Brand (Shop Name) */
+#shop {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;  /* White text for good contrast */
+    letter-spacing: 1px;
+    text-transform: uppercase; /* Optional: makes it stand out more */
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    color: #FFFFFF;  /* White text by default */
+    padding: 8px 16px;
+    font-size: 16px;
+    text-decoration: none; /* No underline */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effect - Bright Green Background */
+.navbar-nav .nav-link:hover {
+    color: #FFFFFF; /* Keep text white on hover */
+    background-color: #388E3C; /* Dark Green background on hover */
+    font-weight: bold; /* Bold on hover */
+}
+
+/* Active Link - Rich Green Background */
+.navbar-nav .nav-item.active .nav-link {
+    color: #FFFFFF; /* White text */
+    background-color: #2C6B2F; /* Darker Green background for active link */
+    font-weight: bold; /* Bold text for active link */
+    border-radius: 5px; /* Rounded corners for active link */
+}
+
+/* Optional: Adjust the spacing of the nav items */
+.navbar-nav .nav-item {
+    margin-left: 15px; /* Add some space between items */
+}
+
+/* Optional: Navbar Toggler for mobile */
+.navbar-toggler {
+    background-color: #388E3C; /* Green background for the toggle button */
+}
+
+.navbar-toggler-icon {
+    background-color: white; /* White icon for visibility */
+}
+

@@ -1,0 +1,24 @@
+<body>
+    <div class="hero">
+        <h1>{{product.name}}</h1>
+        <p class="firstP">Fresh plant that is sale for ${{product.price}} in {{product.location}}.</p>
+    </div>
+    
+    <div class="product-details" *ngIf="product">
+        <div class="product-card">
+            <img [src]="product.image" [alt]="product.name" [title]="product.name">
+            <h2>{{ product.name }}</h2>
+            <h3>Location: {{ product.location }}</h3>
+            <h3>Price: ${{ product.price }}</h3>
+            <a routerLink="/productList" class="btn">Back to List</a>
+        </div>
+    </div>
+    <div *ngIf="!product">
+        <p>Product not found.</p>
+        <a routerLink="/productList" class="btn">Back to List</a>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Plant Shop | All Rights Reserved</p>
+    </footer>
+</body>

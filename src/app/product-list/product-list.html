@@ -1,0 +1,21 @@
+<body>
+    <div class="hero">
+        <h1>See our plants, only in Plantito!</h1>
+        <p class="firstP">Fresh plants, great deals, and healthy greenery for your home</p>
+    </div>
+    
+    <div class="product-list">
+        <h2>Our Plant Collection</h2>
+        <div class="products-grid">
+            <div class="product-card" *ngFor="let product of products">
+                <img [src]="product.image" [alt]="product.name" [title]="product.name">
+                <h3>{{ product.name }}</h3>
+                <a [routerLink]="['/productDetails', product.id]" class="btn">View Product</a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Plant Shop | All Rights Reserved</p>
+    </footer>
+</body>
